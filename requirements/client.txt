@@ -1,4 +1,5 @@
-PyAudio
+pyaudio
 av
 scipy
 websocket-client
+openai
