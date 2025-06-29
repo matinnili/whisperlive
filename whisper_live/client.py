@@ -154,7 +154,7 @@ class Client:
             except Exception as e:
                 print(f"[WARN] transcription_callback raised: {e}")
             return
-        
+        t
         if self.log_transcription:
             # Truncate to last 3 entries for brevity.
             text = text[-3:]
