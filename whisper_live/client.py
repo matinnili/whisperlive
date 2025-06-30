@@ -12,6 +12,7 @@ import uuid
 import time
 import av
 import whisper_live.utils as utils
+import requests
 
 
 class Client:
@@ -154,9 +155,10 @@ class Client:
             except Exception as e:
                 print(f"[WARN] transcription_callback raised: {e}")
             return
-        t
+        
         if self.log_transcription:
             # Truncate to last 3 entries for brevity.
+            # requests.post(url="http://213.181.122.2:40560/chat/completion", json={"text": text})
             text = text[-3:]
             utils.clear_screen()
             utils.print_transcript(text)
